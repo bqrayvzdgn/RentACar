@@ -12,7 +12,7 @@ Bu proje, basit bir **Rent A Car (Araç Kiralama)** uygulamasıdır. Müşteri v
 - **Backend**: C# (.NET Core / .NET Framework)
 - **Veritabanı**: PostgreSQL
 - **ORM**: Entity Framework
-- **Tools**: CQRS, Mediatr, AutoMapper
+- **Tools**: CQRS, Mediatr
 
 ## 📥 Kurulum
 1. **Projeyi klonlayın:**
