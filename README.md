@@ -17,8 +17,8 @@ Bu proje, basit bir **Rent A Car (Araç Kiralama)** uygulamasıdır. Müşteri v
 ## 📥 Kurulum
 1. **Projeyi klonlayın:**
    ```sh
-   git clone https://github.com/bqrayvzdgn/Rent-A-Car.git
-   cd Rent-A-Car
+   git clone https://github.com/bqrayvzdgn/RentACar.git
+   cd RentACar
    ```
 2. **Veritabanını oluşturun:**
    `SQL Server` kullanarak aşağıdaki scripti çalıştırın:
