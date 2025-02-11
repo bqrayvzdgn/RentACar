@@ -1,0 +1,38 @@
+CREATE TABLE Customers (
+    CustomerID SERIAL PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Email VARCHAR(100),
+    Phone VARCHAR(20),
+    Address VARCHAR(200)
+);
+
+CREATE TABLE Cars (
+    CarID SERIAL PRIMARY KEY,
+    Make VARCHAR(50),
+    Model VARCHAR(50),
+    Year INT,
+    PlateNumber VARCHAR(20),
+    DailyRentPrice DECIMAL(10, 2),
+    IsAvailable BOOLEAN
+);
+
+CREATE TABLE Rentals (
+    RentalID SERIAL PRIMARY KEY,
+    CustomerID INT,
+    CarID INT,
+    RentStartDate TIMESTAMP,
+    RentEndDate TIMESTAMP,
+    TotalPrice DECIMAL(10, 2),
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
+    FOREIGN KEY (CarID) REFERENCES Cars(CarID)
+);
+
+CREATE TABLE Payments (
+    PaymentID SERIAL PRIMARY KEY,
+    RentalID INT,
+    PaymentDate TIMESTAMP,
+    Amount DECIMAL(10, 2),
+    PaymentMethod VARCHAR(50),
+    FOREIGN KEY (RentalID) REFERENCES Rentals(RentalID)
+);
