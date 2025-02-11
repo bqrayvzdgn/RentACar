@@ -9,7 +9,7 @@ Bu proje, basit bir **Rent A Car (Araç Kiralama)** uygulamasıdır. Müşteri v
 - 💰 **Ödeme Takibi**: Kiralama ücretlerinin ödenmesini takip etme.
 
 ## 🛠️ Kullanılan Teknolojiler
-- **Backend**: C# (.NET Core / .NET Framework)
+- **Backend**: C# (.NET Core )
 - **Veritabanı**: PostgreSQL
 - **ORM**: Entity Framework
 - **Tools**: CQRS, Mediatr
